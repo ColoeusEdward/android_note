@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#009688"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/side_btn_con"
+                android:padding="18dp"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:background="@drawable/side"
+                    android:layout_centerVertical="true"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/top_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/note_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="笔记本"
+                    android:textColor="#fff"
+                    android:textSize="19sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <androidx.drawerlayout.widget.DrawerLayout-->
+<!--        android:layout_below="@id/my_toolbar"-->
+<!--        android:id="@+id/draw_lay"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="match_parent">-->
+
+
+<!--    </androidx.drawerlayout.widget.DrawerLayout>-->
+
+    <RelativeLayout
+        android:layout_below="@id/my_toolbar"
+        android:id="@+id/recy_con"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_article_recy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:background="@drawable/note_btn"
+        android:id="@+id/add_article_btn"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+    <ImageButton
+        android:background="@drawable/class_btn"
+        android:id="@+id/add_class_btn"
+        android:layout_alignRight="@id/add_article_btn"
+        android:layout_above="@id/add_article_btn"
+        android:layout_marginBottom="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+
+
+</RelativeLayout>

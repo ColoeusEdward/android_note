@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingVertical="20dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/delete_class_con"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16dp"
+            android:id="@+id/delete_class_label"
+            android:text="你确定要删除："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_toRightOf="@id/delete_class_label"
+            android:textSize="16dp"
+            android:id="@+id/delete_class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <Button
+        android:background="@color/mainColor"
+        android:textColor="#ffffff"
+        android:id="@+id/delete_class_btn"
+        android:layout_below="@id/delete_class_con"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:text="删除"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/note_class_toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="#009688"-->
+<!--        android:elevation="4dp"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
+<!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">-->
+
+<!--        <RelativeLayout-->
+
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/side_btn_con"-->
+<!--                android:padding="18dp"-->
+<!--                android:layout_width="55dp"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <ImageButton-->
+<!--                    android:background="@drawable/back"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_width="55dp"-->
+<!--                    android:layout_height="match_parent"/>-->
+<!--            </RelativeLayout>-->
+
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/top_con"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/note_title"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="添加分类"-->
+<!--                    android:textColor="#fff"-->
+<!--                    android:textSize="19sp" />-->
+<!--            </RelativeLayout>-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/note_class_label"
+                android:text="输入分类名:"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:textSize="16dp"
+                android:layout_toRightOf="@id/note_class_label"
+                android:layout_alignBaseline="@id/note_class_label"
+                android:id="@+id/note_class_input"
+                android:layout_width="250dp"
+                android:layout_height="40dp"/>
+
+            <Button
+                android:id="@+id/add_class_dia_btn"
+                android:textSize="16dp"
+                android:text="添加"
+                android:background="@color/mainColor"
+                android:textColor="#ffffff"
+                android:layout_below="@id/note_class_input"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
